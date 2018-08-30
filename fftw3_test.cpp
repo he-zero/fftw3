@@ -11,7 +11,7 @@ int main()
 
 	for (i = 0; i < N; i++) 
 	{ 
-		in[i][0] = 1.0; 
+		in[i][0] = i + 1; 
 		in[i][1] = 0.0;
 		printf("%6.2f ", in[i][0]); 
 	} 
