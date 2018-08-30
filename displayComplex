@@ -1,0 +1,19 @@
+#include"fftw3.h"
+#include
+#include
+
+#define REAL 0
+#define IMAG 1
+
+using namespace std;
+
+void displayComplex(int N, fftw_complex *y)
+{
+  for (size_t i = 0; i < N; i++) 
+  { 
+    if (y[i][IMAG] < 0) 
+    cout << i+1 << "\t" << y[i][REAL] << " - " << abs(y[i][IMAG]) << " i" << endl; 
+    else 
+    cout << i+1 << "\t" << y[i][REAL] << " + " << y[i][IMAG] << " i" << endl; 
+   } 
+} 
