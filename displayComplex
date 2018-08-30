@@ -1,6 +1,5 @@
 #include"fftw3.h"
-#include
-#include
+#include<iostream>
 
 #define REAL 0
 #define IMAG 1
